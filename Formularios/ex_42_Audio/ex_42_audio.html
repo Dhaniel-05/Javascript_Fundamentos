@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador y Audio</title>
+    <link rel="stylesheet" href="ex_42_audio.css">
+</head>
+<body>
+    
+    <label> Selecciona el tiempo de alarma<br>
+        <input type="number" name="tiempo" id="tiempoCronometro">
+    <!-- Se crea un input de tipo numérico para darle la opción al usuario de que pueda elegir el tiempo -->
+    </label>
+
+    <button onclick="cuentaRegresiva()">Iniciar</button> <br>
+    <!-- Se crea un botón que llama la función cuenta regresiva que corresponde al input de seleccionar el tiempo por el usuario-->
+    <h4 id="txtTiempo">¡Tiempo Finalizado!</h4>
+    <h4>Tiempo restante: <span id="contador">0</span> segundos</h4>
+
+    <audio src="Sonidos/Alarma.mp3" id="audioAlarma" type="audio/mpeg" controls>
+        Sonido no habilitado
+        <!-- Esta etiqueta incrusta un archivo de audio MP3 y proporciona controles para reproducirlo. Si el navegador no soporta <audio>, muestra el mensaje "Sonido no habilitado". -->
+    </audio>
+
+    <script src="ex_42_audio.js"></script>
+</body>
+</html>
+
+<!-- <audio>: La etiqueta <audio> se usa para incrustar contenido de audio en una página web. El contenido de audio puede ser un archivo MP3, OGG, WAV, entre otros.
+
+src="Sonidos/Alarma.mp3": El atributo src (source) especifica la ruta al archivo de audio que se va a reproducir. En este caso, el archivo de audio es "Sonidos/Alarma.mp3", que está en una carpeta llamada "Sonidos".
+
+controls: El atributo controls agrega controles de usuario para reproducir, pausar, ajustar el volumen, etc., en el reproductor de audio. Si se incluye, el navegador mostrará estos controles para que los usuarios puedan interactuar con el audio.
+
+id="audioAlarma": El atributo id le asigna un identificador único al elemento de audio, que en este caso es audioAlarma. Esto es útil para acceder al elemento desde JavaScript (por ejemplo, para reproducir el audio en el código).
+
+type="audio/mpeg": El atributo type especifica el tipo MIME del archivo de audio. En este caso, se está especificando que el archivo es un archivo MP3 (audio/mpeg). Esto es útil para ayudar al navegador a identificar el tipo de archivo, aunque generalmente, el navegador lo puede detectar automáticamente basado en la extensión del archivo.
+
+Sonido no habilitado: Este texto es un mensaje alternativo que se muestra en el navegador solo si no es compatible con la etiqueta <audio>. En la mayoría de los navegadores modernos, este mensaje no se verá, ya que todos los navegadores principales soportan la etiqueta <audio>. Sin embargo, si un navegador no es compatible con la etiqueta <audio>, este mensaje aparecerá como un fallback (alternativa) para indicar que el sonido no puede ser reproducido. -->

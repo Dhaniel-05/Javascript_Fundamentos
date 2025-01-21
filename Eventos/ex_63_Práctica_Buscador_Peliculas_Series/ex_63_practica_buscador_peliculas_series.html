@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Peliculas y Series</title>
+    <link rel="stylesheet" href="ex_63_practica_buscador_peliculas_series.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Sweet Alert (Librería Personalizada. Es necesaria la conexión a internet para que funcione)--> 
+</head>
+<body>
+    <h1>Buscador</h1>
+    <hr>
+    <div class="bloque">
+        Seleccione una opción:
+        <select name="" id="miSelector">
+            <option value="peliculas.json">Peliculas</option>
+            <option value="series.json">Series</option>
+        </select>
+    </div>
+    <div class="bloque">
+        <label>
+            <input type="text" id="miInput" placeholder="Ingrese búsqueda...">
+        </label>
+        <button id="miBoton">Buscar</button>
+    </div>
+    <div class="bloque">
+        <ul id="miListado"></ul>
+    </div>
+</body>
+<script src="ex_63_practica_buscador_peliculas_series.js"></script>
+</html>

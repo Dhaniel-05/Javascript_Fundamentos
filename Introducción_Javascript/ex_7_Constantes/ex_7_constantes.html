@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 7 Constantes</title>
+</head>
+<body>
+    <script>
+        /*Las Constantes, son una especie de variable cuyo valor no puede ser cambiado durante la ejecución de un programa*/
+
+        //Se declara la variable y se inicializa con un valor.
+        let precio = 100.00;
+        document.write('Precio: ', precio);
+        document.write('<br>');
+
+        //A la misma variable ahora se le asigna otro valor
+        precio = 200.00;
+        document.write('Precio Cambiado: ', precio);
+        document.write('<br>');
+
+        //Al utilizar la palabra reservada const se indica que este valor no va a cambiar por ello es constante.
+        const Precio = 500.00;
+        document.write('Precio Constante: ', Precio);
+        document.write('<br>');
+        //Ahora a la misma constante se le asigna otro valor
+        precio = 300.00;
+        document.write('Precio Diferente?: ', Precio) //Al imprimir el valor toma el que está inicializado primeramente.
+
+        //Esto significa que el sistema no permite asignarle un valor diferente al que ya ha sido inicializado.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 40%;
+    margin: 0 auto;
+}
+.logo img{
+    height: 180px;
+    width: 180px;
+    background-color: aqua;
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: darkred;
+  font-style: bold;
+}
+h2, h3{
+ color: black;
+}
+.datos{
+    color: black;
+}
+.boton{ background-color: #722a08; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+    }
+

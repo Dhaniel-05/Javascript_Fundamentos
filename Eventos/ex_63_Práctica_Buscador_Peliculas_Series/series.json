@@ -1,0 +1,10 @@
+{
+    "data": 
+    [ 
+        { "nombre": "BAND OF BROTHERS", "sinopsis": "Narra la historia de la Easy Company, un batallón estadounidense del regimiento 506 de paracaidistas, que luchó en Europa durante la II Guerra Mundial."},
+        { "nombre": "GAME OF THRONES", "sinopsis": "La historia se desarrolla en un mundo ficticio de carácter medieval donde hay Siete Reinos. Hay tres líneas argumentales principales: la crónica de la guerra civil dinástica por el control de Poniente entre varias familias que aspiran al Trono de Hierro; la creciente amenaza de los seres desconocidos que viven al otro lado del muro de hielo; y el viaje de Daenerys Targaryen."},
+        { "nombre": "BREAKING BAD", "sinopsis": "Tras cumplir 50 años, Walter White, un profesor de química se entera de que tiene un cáncer de pulmón incurable. La brutal noticia lo impulsa a dar un drástico cambio a su vida: decide, con la ayuda de un antiguo alumno, fabricar anfetaminas y ponerlas a la venta."},
+        { "nombre": "THE OFFICE", "sinopsis": "Corrosivo retrato de los miembros de una empresa."},
+        { "nombre": "THE SIMPSONS", "sinopsis": "Narra la historia de una peculiar familia (Homero, Marge, Bart, Maggie y Lisa Simpson) y otros divertidos personajes de la localidad norteamericana de Springfield."}
+    ]
+}

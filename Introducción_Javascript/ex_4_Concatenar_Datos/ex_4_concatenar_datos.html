@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 4 Concatenar Datos</title>
+</head>
+<body>
+    <!--Javascript directo en mi html-->
+    <script>
+        let nombre = 'Dhaniel';
+        let apellido = 'Martínez';
+        document.write(nombre + ' ' + apellido);
+        document.write('<br>');
+        document.write('Nombres y apellidos: '+ nombre +' '+ apellido);
+        document.write('<br>');
+
+        let saludo = nombre.concat(apellido); //Otra forma de concatenar o unir valores, sin embargo no se puede añadir espacios entre las concatenaciones, por lo que no resulta muy útil.
+        document.write(saludo);
+
+        let precio = 500.00;
+        document.write('<br>'); //Salto de línea
+        document.write('El precio es: '+'$'+precio);
+        document.write('<br>'); //Salto de línea
+        document.write('============<br>'); //Salto de línea
+
+        //Concatenar con comas
+        document.write(nombre,' ',apellido);
+        document.write('<br>');
+        document.write('El precio es :','$',precio)
+
+    </script>
+</body>
+</html>

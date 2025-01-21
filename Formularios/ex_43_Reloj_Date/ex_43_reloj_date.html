@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Date</title>
+    <link rel="stylesheet" href="ex_43_reloj_date.css">
+</head>
+<body onload="comenzarReloj()">
+    <label>Seleccione los segundos para activar el sonido
+        <input type="number" name="tiempo" id="tiempoelegido">
+    </label>
+    <button onclick="comenzarTiempo()">Alarma</button>
+    <h1 id="textoalarma">00:00:00</h1>
+
+    <audio src="Sonidos/Alarma.mp3" id="audioAlarma" type="audio/mpeg" >
+        Sonido no habilitado
+    </audio>
+
+    <script src="ex_43_reloj_date.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "nombre":"Dhaniel",
+    "edad":40,
+    "estudiante": "true",
+    "residencia":{
+        "direccion":"Calle 32 #17-26",
+        "ciudad":"Palmira"
+    },
+    "telefonos":["3107406038","3188688008"]
+}

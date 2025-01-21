@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 8 Operadores</title>
+</head>
+<body>
+    <script>
+        let a, b, c, d, sum, rest, mult, div, resid, potenc;
+        //Pedir datos al usuario
+        a = prompt('Ingrese el primer valor: ');
+        b = prompt('Ingrese el segundo valor: ');
+        //Suma
+        sum = a + b;
+        //Resta
+        rest = a - b;
+        //Multiplicación
+        mult = a * b;
+        //División
+        div = a / b;
+        //Residuo
+        resid = a % b;
+        //Potencia
+        potenc = a ** b;
+
+        //Mostrar los resultados
+        document.write('La suma es: ', sum); //Este resultado no es de la suma sino una concatenación
+        document.write('<br>');
+        document.write('La resta es: ', rest);
+        document.write('<br>');
+        document.write('La multiplicación es: ', mult);
+        document.write('<br>');
+        document.write('La división es: ', div);
+        document.write('<br>');
+        document.write('El residuo es: ', resid);
+        document.write('<br>');
+        document.write('La potencia es: ', potenc);
+        document.write('<br>');
+
+        //Pedir datos al usuario y parsear o convertirlos en valores para que no de error dado que el operador + se utiliza para concatenar, sin embargo al parsear los valores hace la suma correctamente.
+        c = parseFloat(prompt('Ingrese el primer valor: '));
+        d = parseInt(prompt('Ingrese el segundo valor: '));
+        //Suma
+        sum = c + d;
+        //Resta
+        rest = c - d;
+        //Multiplicación
+        mult = c * d;
+        //División
+        div = c / d;
+        //Residuo
+        resid = c % d;
+        //Potencia
+        potenc = c ** d;
+
+        //Mostrar los resultados
+        document.write('La suma es: ', sum);
+        document.write('<br>');
+        document.write('La resta es: ', rest);
+        document.write('<br>');
+        document.write('La multiplicación es: ', mult);
+        document.write('<br>');
+        document.write('La división es: ', div);
+        document.write('<br>');
+        document.write('El residuo es: ', resid);
+        document.write('<br>');
+        document.write('La potencia es: ', potenc);
+        document.write('<br>');
+
+    </script>
+</body>
+</html>

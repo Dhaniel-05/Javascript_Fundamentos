@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="ex_41_temporizador_set_time_out.css">
+</head>
+<body>
+    <button onclick="comenzarTiempo()">Alerta de 5 Segundos</button> <br> <br>
+    <!-- Se crea un botón que llama la función comenzar tiempo -->
+
+    <label for="tiempoElegido"> Selecciona el tiempo <br>
+        <input type="number" name="tiempo" id="tiempoElegido">
+    <!-- Se crea un input de tipo numérico para darle la opción al usuario de que pueda elegir el tiempo -->
+    </label>
+    
+    <button onclick="iniciarTiempo()">Activar</button> <br> <br>
+    <!-- Se crea un botón que llama la función iniciar tiempo y que corresponde al input de seleccionar el tiempo por el usuario-->
+
+    <label for="tiempoCronometro"> Selecciona el tiempo <br>
+        <input type="number" name="tiempo" id="tiempoCronometro">
+    <!-- Se crea un input de tipo numérico para darle la opción al usuario de que pueda elegir el tiempo -->
+    </label>
+
+    <button onclick="cuentaRegresiva()">Iniciar</button> <br>
+    <!-- Se crea un botón que llama la función cuenta regresiva que corresponde al input de seleccionar el tiempo por el usuario-->
+    <h4 id="txtTiempo">¡Tiempo Finalizado!</h4>
+    <h4>Tiempo restante: <span id="contador">0</span> segundos</h4>
+
+    <script src="ex_41_temporizador_set_time_out.js"></script>
+</body>
+</html>

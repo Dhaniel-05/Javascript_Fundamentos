@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color: darkgreen;
+}
+input{
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px soli #ccc;
+    border-radius: 4px;
+}
+select{
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+    color: grey;
+    font-weight: lighter;
+}
+.bloque{
+    margin: 20px;
+}

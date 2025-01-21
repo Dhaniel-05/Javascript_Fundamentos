@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evitar barras de desplazamiento */
+}
+canvas {
+    display: block;
+}

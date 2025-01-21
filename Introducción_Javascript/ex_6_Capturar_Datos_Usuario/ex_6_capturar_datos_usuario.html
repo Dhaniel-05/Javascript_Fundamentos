@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 6 Capturar Datos Usuario</title>
+</head>
+<body>
+    <script>
+        //Se pueden crear tantas variables cómo se necesiten con tan sólo una declaración let. Se debe de tener cuidado, pues, al llamarlas hay que tener en cuenta el orden de creación.
+        let nombre, edad, direccion, movil, email;
+
+        /*La palabra reservada prompt es una función de sistema que despliega un mensaje que puede ser de tipo string, un número o un carácter, entre otros.
+        El prompt despliega para el usuario una venta para que coloque el dato solicitado*/
+
+        //Se le piden al usuario los datos para que nuestro programa trabaje.
+        nombre = prompt('Escriba su nombre...');
+        edad = prompt('Digite su edad...');
+        direccion = prompt('Escriba su dirección...');
+        movil = prompt('Digite su móvil...');
+        email = prompt('Escriba su email...');
+        document.write('Nombre: ', nombre);
+        document.write('<br>');
+        document.write('Edad: ', edad);
+        document.write('<br>');
+        document.write('Dirección: ', direccion);
+        document.write('<br>');
+        document.write('Móvil: ', movil);
+        document.write('<br>');
+        document.write('Email: ', email);
+        // document.write('<br>');
+        // document.write('Nombre: ', nombre, ' ','Edad: ', edad, 'Dirección: ', direccion, ' ', 'Móvil: ', movil, ' ', 'Email: ', email);
+    </script>
+</body>
+</html>

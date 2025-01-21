@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onfocus</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Enlace a la librería SweetAlert -->
+</head>
+<body>
+    
+    <h4>Ingrese sus datos</h4>
+    <form>
+        <label>
+            Nombre
+            <input type="text" name="nombre" id="nombre" onfocus="vaciar(this)" value="nombre">
+            <!-- El evento onfocus va a tomar la función vaciar con el valor que está entre paréntesis el cual es this y este hace referencia al parámetro control de la función creada en javascript -->
+        </label>
+        <br> <br>
+        <label>
+            Edad
+            <input type="text" name="edad" id="edad" onfocus="vaciar(this)" value="edad">
+        </label>
+        <br><br>
+
+        <input type="button" value="Ingresar" onclick="verificar()">
+    </form>
+    <script src="ex_36_onfocus.js"></script>
+</body>
+</html>

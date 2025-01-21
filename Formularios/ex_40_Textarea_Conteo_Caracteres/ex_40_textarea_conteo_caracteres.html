@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea Conteo Carácteres</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Enlace a la librería SweetAlert -->
+</head>
+<body>
+    <label for="texto">Ingresar texto
+        <p><textarea name="texto" rows="10" cols="40" id="texto" maxlength="20"></textarea></p>
+    </label>
+
+    <!-- name="texto" Nombre asociado al textarea -->
+    <!-- rows="10" Define el número de filas visibles -->
+    <!-- cols="40" Define el número de columnas visibles -->
+    <!-- id="texto" ID único para identificar este elemento en el DOM -->
+    <!-- maxlength="20"> Límite máximo de caracteres permitido -->
+
+    <p>Carácteres disponibles: <span id="cantidad">20</span> </p>
+    <!-- Muestra la cantidad de caracteres disponibles -->
+
+    <script src="ex_40_textarea_conteo_caracteres.js"></script>
+    <!-- Vincula un archivo externo de JavaScript que contiene la lógica -->
+</body>
+</html>

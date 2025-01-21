@@ -1,0 +1,9 @@
+{
+"titular": "Homero Simpson",
+"no_miembro": "123-456789", 
+"direccion": "Avenida Siempreviva #742",  
+"telefono":"636-555-3472",
+"email":"amantedelacomida@aol.com", 
+"saldo": [ { "moneda": "usd", "monto": 725.09 }, { "moneda": "eu", "monto": 195.67} ],
+"miembro_desde": "1995"
+}

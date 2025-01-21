@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 3 Tipos de Datos</title>
+</head>
+<body>
+    <!--los tipos de datos son las distintas definiciones o posibilidades que tenemos para almacenar datos en nuestras variables. Cuando declaramos una variable y la inicializamos le estamos asignando un valor y ese valor tiene un tipo de dato bien sea de tipo de dato entero, decimal, carácter, booleando e incluso, puede ser una lista, una estructura entre otros.-->
+    <!--Javascript directo en mi html-->
+    <script>
+        let nombre = 'Dhaniel'; //Variable de tipo string
+        let cantidad = 55; //Variable de tipo entero
+        let precio = 10.85; //Variable de tipo decimal
+        let verdadero = true; //Variable de tipo booleano
+        let falso = false; //Variable de tipo booleano
+        let nulo = null; //Variable de tipo nulo
+
+        document.write(nombre);
+        document.write('<br>'); //Agregar salto de línea para no ver todo pegado es una etiqueta html.
+        document.write(cantidad);
+        document.write('<br>');
+        document.write(precio);
+        document.write('<br>');
+        document.write(verdadero);
+        document.write('<br>');
+        document.write(falso);
+        document.write('<br>');
+        document.write(nulo);
+        document.write('<br>');
+
+        //javascript también maneja tipos de datos object. Esto significa que, es un tipo de dato que puede contener propiedades y métodos.
+
+        let persona = {nombre:'Sebastián', edad: 39, estatura: 1.70, sexo: 'masculino'};
+
+        document.write(persona.nombre); //Para traer el contenido de la variable persona, se debe llamar la variable y seguido colocar un punto dado que es de tipo object e inmediatamente dirá que tipo de dato desea ver para asignarlo.
+        document.write('<br>');
+        document.write(
+        'nombre: ', persona.nombre, ' ',
+        'estatura: ', persona.estatura, ' ',
+        'edad: ', persona.edad, ' ',
+        'género: ',persona.sexo
+        ); //Concatenación y separador de cadena vacío
+
+    </script>
+</body>
+</html>

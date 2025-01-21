@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Enlace a la librería SweetAlert -->
+</head>
+
+<body>
+    <h4>¿Qué lenguajes de programación conoces?</h4>
+    <form>
+        <label>
+            <input type="checkbox" name="java" id="check1"> Java
+        </label> <!-- Dado que el checkbox está contenido dentro del label, no es necesario usar for dentro del label. El vínculo se establece automáticamente. Esto simplifica el código sin perder funcionalidad. -->
+        <br>
+
+        <label>
+            <input type="checkbox" name="python" id="check2"> Python
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" name="c#" id="check3"> C#
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" name="c++" id="check4"> C++
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" name="javascript" id="check5"> Javascript
+        </label>
+        <br>
+        <br>
+        <input type="button" value="Confirmar" onclick="seleccion()">
+    </form>
+
+    <script src="ex_33_checkbox.js"></script>
+</body>
+
+</html>

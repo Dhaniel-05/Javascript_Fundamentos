@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Control Texto</title>
+</head>
+<body>
+    <h4>Acceso de usuarios</h4>
+    <form>
+        <!-- Etiqueta para el usuario -->
+        <label for="usuario">Ingrese el usuario:</label> <br>
+        <input type="text" name="user" id="usuario">
+        <br> <br>
+        <!-- Etiqueta para la contraseña -->
+        <label for="clave">Ingrese la contraseña:</label> <br>
+        <input type="password" name="password" id="clave">
+        <br> <br>
+        <!-- Botón de confirmar -->
+        <input type="button" value="Confirmar" onclick="verificar()">
+        <!-- El atributo onclick llama a la función 'verificar' definida en el archivo JavaScript externo. 
+        La función accede al valor del campo de entrada con id 'clave', lo compara con la contraseña 
+        almacenada en JavaScript y realiza acciones según el resultado (mostrar alertas o abrir un enlace). -->
+    </form>
+    <!-- Enlace al archivo externo de JavaScript -->
+    <script src="ex_30_formularios_controles_texto.js"></script>
+    <!-- Este script contiene la lógica para manejar los intentos de acceso y la validación de la contraseña. -->
+
+</body>
+</html>

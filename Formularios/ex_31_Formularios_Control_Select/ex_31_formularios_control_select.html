@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Control Select</title>
+</head>
+
+<body>
+    <h4>Selección de Colores Primarios</h4>
+    <form> <!-- Formulario para interactuar con los controles -->
+        <p>
+            <label for="select">Elija un color:</label> <!-- El label describe el propósito del select y está asociado al elemento mediante el atributo "for" -->
+            <select name="select" id="select" onchange="cambiarColor()"> <!-- Select con id "select" que ejecuta la función "cambiarColor" cuando cambia su valor -->
+                <option value="">Seleccione un color</option> <!-- Opción inicial vacía para guiar al usuario -->
+                <option value="Seleccionó el color amarillo">Amarillo</option> <!-- Opción con texto "Amarillo" y valor correspondiente -->
+                <option value="Seleccionó el color azul">Azul</option> <!-- Opción con texto "Azul" y valor correspondiente -->
+                <option value="Seleccionó el color rojo">Rojo</option> <!-- Opción con texto "Rojo" y valor correspondiente -->
+            </select>
+        </p>
+
+        <p>
+            <label for="text1">Índice seleccionado:</label> <!-- Campo para mostrar el índice de la opción seleccionada -->
+            <input type="text" name="indice" id="text1"> <!-- Este campo de entrada de texto mostrará el índice de la opción seleccionada del menú desplegable. En el script, `document.getElementById('text1')` se utiliza para acceder a este elemento. Cuando el usuario selecciona una opción, la función `cambiarColor()` asigna el índice de la opción seleccionada (obtenido con `seleccion.selectedIndex`) a la propiedad `.value` de este input. -->
+        </p>
+
+        <p>
+            <label for="text2">Color seleccionado:</label> <!-- Campo para mostrar el texto de la opción seleccionada -->
+            <input type="text" name="color" id="text2">  <!-- Este campo de entrada de texto mostrará el texto visible de la opción seleccionada del menú desplegable. En el script, `document.getElementById('text2')` se utiliza para acceder a este elemento. La función `cambiarColor()` asigna el texto de la opción seleccionada (obtenido con `seleccion.options[seleccion.selectedIndex].text`) a la propiedad `.value` de este input. -->
+        </p>
+
+        <p>
+            <label for="text3">Indicación:</label> <!-- Campo para mostrar el valor asociado a la opción seleccionada -->
+            <input type="text" name="indicacion" id="text3"> <!-- Este campo de entrada de texto mostrará el valor asociado a la opción seleccionada del menú desplegable. En el script, `document.getElementById('text3')` se utiliza para acceder a este elemento. La función `cambiarColor()` asigna el valor de la opción seleccionada (obtenido con `seleccion.options[seleccion.selectedIndex].value`) a la propiedad `.value` de este input. -->       
+        </p>
+    </form>
+
+    <script src="ex_31_formularios_control_select.js"></script>
+</body>
+
+</html>
