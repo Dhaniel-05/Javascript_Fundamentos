@@ -1,0 +1,13 @@
+.zebra-list li {
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 5px; /* Separación entre elementos */
+    font-size: 16px;
+}
+
+.zebra-list li:nth-child(odd) {
+    background-color: #f2f2f2; /* Gris claro */
+}
+
+.zebra-list li:nth-child(even) {
+    background-color: #ffffff; /* Blanco */
+}
