@@ -102,17 +102,46 @@ document.write('<br>');
 
 //Se declara e inicializa la variable para calcular un valor aleatorio dejando vacío para que lo realice sin especificar un rango
 var aleatorio = Math.random();
-document.write('El valor aleatorio calculado es: ', aleatorio);
+document.write('El valor aleatorio o random calculado es: ', aleatorio);
 document.write('<br>');
 
 //Se declara e inicializa la variable para calcular un valor aleatorio colocando un rango específico
-var aleatorio = Math.random(5,6);
-document.write('El valor aleatorio calculado entre el rango es: ', aleatorio);
-document.write('<br>');
+var aleatorio = Math.floor(Math.random()*(15 - 5 + 1) + 5);
+document.writeln('El valor aleatorio calculado entre el 15 y 5 es: ', aleatorio);
+document.writeln('<br>');
 
-//Se declara e inicializa la variable para calcular un valor aleatorio colocando un rango específico y redondeando el valor
-var aleatorio = Math.round(Math.random()*5); //Significa que el valor aleatorio estará en el rango que va de cero hasta cinco.
-document.write('El valor aleatorio entero calculado entre el rango es: ', aleatorio);
+/* Para este caso a traves de este esquema de fórmula sucede lo siguiente:
+Math.floor(Math.random() * (Max - Min + 1) + Min);
+
+1. Math.random()genera un número decimal entre 0y 1(incluye 0, pero nunca 1). Puede generar valores como 0.0, 0.5, 0.9999999, pero nunca exactamente 1.
+
+2. Se multiplica el random generado por (Max - Min + 1), lo que da el tamaño del rango de números posibles. En este caso: 15 - 5 + 1 = 11, lo que significa que Math.random()se escalará a un valor entre 0 y 10.9999999.
+
+3. Se suma Min para desplazar el rango. Antes de sumar Min, los valores estan entre 0y 10.9999999. Posteriormente, al sumar 5, ahora los valores estarán entre 5y 15.9999999. 
+
+4. Math.floor()redondea hacia abajo para asegurar de obtener solo números enteros. Sin Math.floor(), se obtendrían decimales. Con Math.floor(), cualquier valor entre 5.000000 y 5.999999 se convierte en 5, entre 6.000000 y 6.999999 se convierte en 6, y así sucesivamente hasta 15. 
+
+5. El + 1 en (Max - Min + 1) se utiliza para incluir el límite superior (Max). Sin el + 1, Math.random() solo podría generar números hasta Max - 1. El + 1 permite que Math.random() * (Max - Min + 1) llegue hasta Max, garantizando que Max sea una posibilidad al hacer Math.floor().
+
+Ejemplo:
+
+Si Math.random() genera 0.999999, el cálculo es: 
+Math.floor(0.999999 * (15 - 5 + 1) + 5);
+1. 0.999999 * 11 = 10.99999
+2. 10.99999 + 5 = 15.99999
+3. Math.floor(15.99999) = 15✅
+Esto confirma que 15 puede ser generado.
+
+Si Math.random()se genera 0, el cálculo es:
+Math.floor(0 * (15 - 5 + 1) + 5);
+1. 0 * 11 = 0
+2. 0 + 5 = 5
+3. Math.floor(5) = 5✅
+Esto confirma que 5 puede ser generado.
+*/
+
+var aleatorio = Math.floor(Math.random() * 6); // Genera valores entre 0 y 5, de manera uniforme
+document.write('El valor aleatorio entero calculado entre 0 y 5 es: ', aleatorio);
 document.write('<br>');
 
 //Se declara e inicializa la variable para calcular la raíz cuadrado de un número.
